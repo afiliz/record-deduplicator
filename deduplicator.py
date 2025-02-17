@@ -22,6 +22,7 @@ class DedupeHandler():
 		self.records = self.json_data['leads']
 		self.dupe_name = file_name.split('.')[0]
 
+	# Go through each record field and log differences
 	def compare_fields(self, source, output):
 		differences = []
 
@@ -36,7 +37,7 @@ class DedupeHandler():
 		unique_records = {}
 		change_logs = []
 
-		# Use dict to check against for duplicates
+		# Use dict to check against for duplicates in O(n)
 		for record in records:
 			record_key = record[dedupe_key]
 
@@ -55,6 +56,7 @@ class DedupeHandler():
 
 		return [list(unique_records.values()), [asdict(log) for log in change_logs]]
 	
+	# De-duplicates based on ID and email, and writes results and logs to files
 	def dedupe_records(self):
 		deduped_ids = self.dedupe_field(self.records, '_id')
 		deduped_data = self.dedupe_field(deduped_ids[0], 'email')
@@ -74,7 +76,7 @@ class DedupeHandler():
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 
-	parser.add_argument("file_path", help="Path of JSON file to deduplicate")
+	parser.add_argument("file_path", help="Path of JSON file to de-duplicate")
 	args = parser.parse_args()
 
 	dedupe_handler = DedupeHandler(file_name=args.file_path)
