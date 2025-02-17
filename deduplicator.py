@@ -1,30 +1,48 @@
 import json
 from datetime import datetime
+from dataclasses import dataclass
 
-def dedupe_records(records, dedupe_key):
-	unique_entries = {}
+@dataclass
+class FieldChange:
+	field: str
+	old_value: str
+	new_value: str
 
-	for record in records:
-		record_key = record[dedupe_key]
 
-		if record_key not in unique_entries:
-			unique_entries[record_key] = record
-		else:
-			current_record_date = datetime.fromisoformat(unique_entries[record_key]['entryDate'])
-			compare_record_date = datetime.fromisoformat(record['entryDate'])
+class DedupeHandler():
+	def __init__(self, file_name=None):
+		self.file_name = file_name
+		self.json_data = json.load(open(file_name))
+		self.records = self.json_data['leads']
 
-			if current_record_date <= compare_record_date:
+	def dedupe_field(self, records, dedupe_key):
+		unique_entries = {}
+
+		for record in records:
+			record_key = record[dedupe_key]
+
+			if record_key not in unique_entries:
 				unique_entries[record_key] = record
+			else:
+				current_record_date = datetime.fromisoformat(unique_entries[record_key]['entryDate'])
+				compare_record_date = datetime.fromisoformat(record['entryDate'])
 
-	return list(unique_entries.values())
+				if current_record_date <= compare_record_date:
+					unique_entries[record_key] = record
 
-with open('leads.json', 'r') as f:
-	records = json.load(f)['leads']
+		return list(unique_entries.values())
+	
+	def dedupe_records(self):
+		deduped_ids = self.dedupe_field(self.records, '_id')
+		deduped_data = self.dedupe_field(deduped_ids, 'email')
 
-deduped_ids = dedupe_records(records, 'email')
-deduped_data = dedupe_records(deduped_ids, '_id')
+		print("Deduped records in provided file. Writing results to deduped_leads.json...")
+		deduped_result = {'leads': deduped_data}
+		with open('deduped_leads.json', 'w') as f:
+			json.dump(deduped_result, f, indent=4)
 
-deduped_result = {'leads': deduped_data}
+		return deduped_data
 
-with open('deduped_leads.json', 'w') as f:
-	json.dump(deduped_result, f, indent=4)
+if __name__ == '__main__':
+	dedupe_handler = DedupeHandler(file_name='leads.json')
+	dedupe_handler.dedupe_records()
