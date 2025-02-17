@@ -1,0 +1,453 @@
+{
+    "id_deduplication": [
+        {
+            "old_record": {
+                "_id": "jkj238238jdsnfsj23",
+                "email": "foo@bar.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "address": "123 Street St",
+                "entryDate": "2014-05-07T17:30:20+00:00"
+            },
+            "new_record": {
+                "_id": "jkj238238jdsnfsj23",
+                "email": "foo@bar.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "address": "123 Street St",
+                "entryDate": "2014-05-07T17:30:20+00:00"
+            },
+            "field_changes": []
+        },
+        {
+            "old_record": {
+                "_id": "edu45238jdsnfsj23",
+                "email": "mae@bar.com",
+                "firstName": "Ted",
+                "lastName": "Masters",
+                "address": "44 North Hampton St",
+                "entryDate": "2014-05-07T17:31:20+00:00"
+            },
+            "new_record": {
+                "_id": "edu45238jdsnfsj23",
+                "email": "mae@bar.com",
+                "firstName": "Ted",
+                "lastName": "Masters",
+                "address": "44 North Hampton St",
+                "entryDate": "2014-05-07T17:31:20+00:00"
+            },
+            "field_changes": []
+        },
+        {
+            "old_record": {
+                "_id": "wabaj238238jdsnfsj23",
+                "email": "bog@bar.com",
+                "firstName": "Fran",
+                "lastName": "Jones",
+                "address": "8803 Dark St",
+                "entryDate": "2014-05-07T17:31:20+00:00"
+            },
+            "new_record": {
+                "_id": "wabaj238238jdsnfsj23",
+                "email": "bog@bar.com",
+                "firstName": "Fran",
+                "lastName": "Jones",
+                "address": "8803 Dark St",
+                "entryDate": "2014-05-07T17:31:20+00:00"
+            },
+            "field_changes": []
+        },
+        {
+            "old_record": {
+                "_id": "jkj238238jdsnfsj23",
+                "email": "foo@bar.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "address": "123 Street St",
+                "entryDate": "2014-05-07T17:30:20+00:00"
+            },
+            "new_record": {
+                "_id": "jkj238238jdsnfsj23",
+                "email": "coo@bar.com",
+                "firstName": "Ted",
+                "lastName": "Jones",
+                "address": "456 Neat St",
+                "entryDate": "2014-05-07T17:32:20+00:00"
+            },
+            "field_changes": [
+                {
+                    "field": "email",
+                    "old_value": "foo@bar.com",
+                    "new_value": "coo@bar.com"
+                },
+                {
+                    "field": "firstName",
+                    "old_value": "John",
+                    "new_value": "Ted"
+                },
+                {
+                    "field": "lastName",
+                    "old_value": "Smith",
+                    "new_value": "Jones"
+                },
+                {
+                    "field": "address",
+                    "old_value": "123 Street St",
+                    "new_value": "456 Neat St"
+                },
+                {
+                    "field": "entryDate",
+                    "old_value": "2014-05-07T17:30:20+00:00",
+                    "new_value": "2014-05-07T17:32:20+00:00"
+                }
+            ]
+        },
+        {
+            "old_record": {
+                "_id": "sel045238jdsnfsj23",
+                "email": "foo@bar.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "address": "123 Street St",
+                "entryDate": "2014-05-07T17:32:20+00:00"
+            },
+            "new_record": {
+                "_id": "sel045238jdsnfsj23",
+                "email": "foo@bar.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "address": "123 Street St",
+                "entryDate": "2014-05-07T17:32:20+00:00"
+            },
+            "field_changes": []
+        },
+        {
+            "old_record": {
+                "_id": "qest38238jdsnfsj23",
+                "email": "foo@bar.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "address": "123 Street St",
+                "entryDate": "2014-05-07T17:32:20+00:00"
+            },
+            "new_record": {
+                "_id": "qest38238jdsnfsj23",
+                "email": "foo@bar.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "address": "123 Street St",
+                "entryDate": "2014-05-07T17:32:20+00:00"
+            },
+            "field_changes": []
+        },
+        {
+            "old_record": {
+                "_id": "vug789238jdsnfsj23",
+                "email": "foo1@bar.com",
+                "firstName": "Blake",
+                "lastName": "Douglas",
+                "address": "123 Reach St",
+                "entryDate": "2014-05-07T17:33:20+00:00"
+            },
+            "new_record": {
+                "_id": "vug789238jdsnfsj23",
+                "email": "foo1@bar.com",
+                "firstName": "Blake",
+                "lastName": "Douglas",
+                "address": "123 Reach St",
+                "entryDate": "2014-05-07T17:33:20+00:00"
+            },
+            "field_changes": []
+        },
+        {
+            "old_record": {
+                "_id": "wuj08238jdsnfsj23",
+                "email": "foo@bar.com",
+                "firstName": "Micah",
+                "lastName": "Valmer",
+                "address": "123 Street St",
+                "entryDate": "2014-05-07T17:33:20+00:00"
+            },
+            "new_record": {
+                "_id": "wuj08238jdsnfsj23",
+                "email": "foo@bar.com",
+                "firstName": "Micah",
+                "lastName": "Valmer",
+                "address": "123 Street St",
+                "entryDate": "2014-05-07T17:33:20+00:00"
+            },
+            "field_changes": []
+        },
+        {
+            "old_record": {
+                "_id": "belr28238jdsnfsj23",
+                "email": "mae@bar.com",
+                "firstName": "Tallulah",
+                "lastName": "Smith",
+                "address": "123 Water St",
+                "entryDate": "2014-05-07T17:33:20+00:00"
+            },
+            "new_record": {
+                "_id": "belr28238jdsnfsj23",
+                "email": "mae@bar.com",
+                "firstName": "Tallulah",
+                "lastName": "Smith",
+                "address": "123 Water St",
+                "entryDate": "2014-05-07T17:33:20+00:00"
+            },
+            "field_changes": []
+        },
+        {
+            "old_record": {
+                "_id": "jkj238238jdsnfsj23",
+                "email": "coo@bar.com",
+                "firstName": "Ted",
+                "lastName": "Jones",
+                "address": "456 Neat St",
+                "entryDate": "2014-05-07T17:32:20+00:00"
+            },
+            "new_record": {
+                "_id": "jkj238238jdsnfsj23",
+                "email": "bill@bar.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "address": "888 Mayberry St",
+                "entryDate": "2014-05-07T17:33:20+00:00"
+            },
+            "field_changes": [
+                {
+                    "field": "email",
+                    "old_value": "coo@bar.com",
+                    "new_value": "bill@bar.com"
+                },
+                {
+                    "field": "firstName",
+                    "old_value": "Ted",
+                    "new_value": "John"
+                },
+                {
+                    "field": "lastName",
+                    "old_value": "Jones",
+                    "new_value": "Smith"
+                },
+                {
+                    "field": "address",
+                    "old_value": "456 Neat St",
+                    "new_value": "888 Mayberry St"
+                },
+                {
+                    "field": "entryDate",
+                    "old_value": "2014-05-07T17:32:20+00:00",
+                    "new_value": "2014-05-07T17:33:20+00:00"
+                }
+            ]
+        }
+    ],
+    "email_deduplication": [
+        {
+            "old_record": {
+                "_id": "jkj238238jdsnfsj23",
+                "email": "bill@bar.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "address": "888 Mayberry St",
+                "entryDate": "2014-05-07T17:33:20+00:00"
+            },
+            "new_record": {
+                "_id": "jkj238238jdsnfsj23",
+                "email": "bill@bar.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "address": "888 Mayberry St",
+                "entryDate": "2014-05-07T17:33:20+00:00"
+            },
+            "field_changes": []
+        },
+        {
+            "old_record": {
+                "_id": "edu45238jdsnfsj23",
+                "email": "mae@bar.com",
+                "firstName": "Ted",
+                "lastName": "Masters",
+                "address": "44 North Hampton St",
+                "entryDate": "2014-05-07T17:31:20+00:00"
+            },
+            "new_record": {
+                "_id": "edu45238jdsnfsj23",
+                "email": "mae@bar.com",
+                "firstName": "Ted",
+                "lastName": "Masters",
+                "address": "44 North Hampton St",
+                "entryDate": "2014-05-07T17:31:20+00:00"
+            },
+            "field_changes": []
+        },
+        {
+            "old_record": {
+                "_id": "wabaj238238jdsnfsj23",
+                "email": "bog@bar.com",
+                "firstName": "Fran",
+                "lastName": "Jones",
+                "address": "8803 Dark St",
+                "entryDate": "2014-05-07T17:31:20+00:00"
+            },
+            "new_record": {
+                "_id": "wabaj238238jdsnfsj23",
+                "email": "bog@bar.com",
+                "firstName": "Fran",
+                "lastName": "Jones",
+                "address": "8803 Dark St",
+                "entryDate": "2014-05-07T17:31:20+00:00"
+            },
+            "field_changes": []
+        },
+        {
+            "old_record": {
+                "_id": "sel045238jdsnfsj23",
+                "email": "foo@bar.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "address": "123 Street St",
+                "entryDate": "2014-05-07T17:32:20+00:00"
+            },
+            "new_record": {
+                "_id": "sel045238jdsnfsj23",
+                "email": "foo@bar.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "address": "123 Street St",
+                "entryDate": "2014-05-07T17:32:20+00:00"
+            },
+            "field_changes": []
+        },
+        {
+            "old_record": {
+                "_id": "sel045238jdsnfsj23",
+                "email": "foo@bar.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "address": "123 Street St",
+                "entryDate": "2014-05-07T17:32:20+00:00"
+            },
+            "new_record": {
+                "_id": "qest38238jdsnfsj23",
+                "email": "foo@bar.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "address": "123 Street St",
+                "entryDate": "2014-05-07T17:32:20+00:00"
+            },
+            "field_changes": [
+                {
+                    "field": "_id",
+                    "old_value": "sel045238jdsnfsj23",
+                    "new_value": "qest38238jdsnfsj23"
+                }
+            ]
+        },
+        {
+            "old_record": {
+                "_id": "vug789238jdsnfsj23",
+                "email": "foo1@bar.com",
+                "firstName": "Blake",
+                "lastName": "Douglas",
+                "address": "123 Reach St",
+                "entryDate": "2014-05-07T17:33:20+00:00"
+            },
+            "new_record": {
+                "_id": "vug789238jdsnfsj23",
+                "email": "foo1@bar.com",
+                "firstName": "Blake",
+                "lastName": "Douglas",
+                "address": "123 Reach St",
+                "entryDate": "2014-05-07T17:33:20+00:00"
+            },
+            "field_changes": []
+        },
+        {
+            "old_record": {
+                "_id": "qest38238jdsnfsj23",
+                "email": "foo@bar.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "address": "123 Street St",
+                "entryDate": "2014-05-07T17:32:20+00:00"
+            },
+            "new_record": {
+                "_id": "wuj08238jdsnfsj23",
+                "email": "foo@bar.com",
+                "firstName": "Micah",
+                "lastName": "Valmer",
+                "address": "123 Street St",
+                "entryDate": "2014-05-07T17:33:20+00:00"
+            },
+            "field_changes": [
+                {
+                    "field": "_id",
+                    "old_value": "qest38238jdsnfsj23",
+                    "new_value": "wuj08238jdsnfsj23"
+                },
+                {
+                    "field": "firstName",
+                    "old_value": "John",
+                    "new_value": "Micah"
+                },
+                {
+                    "field": "lastName",
+                    "old_value": "Smith",
+                    "new_value": "Valmer"
+                },
+                {
+                    "field": "entryDate",
+                    "old_value": "2014-05-07T17:32:20+00:00",
+                    "new_value": "2014-05-07T17:33:20+00:00"
+                }
+            ]
+        },
+        {
+            "old_record": {
+                "_id": "edu45238jdsnfsj23",
+                "email": "mae@bar.com",
+                "firstName": "Ted",
+                "lastName": "Masters",
+                "address": "44 North Hampton St",
+                "entryDate": "2014-05-07T17:31:20+00:00"
+            },
+            "new_record": {
+                "_id": "belr28238jdsnfsj23",
+                "email": "mae@bar.com",
+                "firstName": "Tallulah",
+                "lastName": "Smith",
+                "address": "123 Water St",
+                "entryDate": "2014-05-07T17:33:20+00:00"
+            },
+            "field_changes": [
+                {
+                    "field": "_id",
+                    "old_value": "edu45238jdsnfsj23",
+                    "new_value": "belr28238jdsnfsj23"
+                },
+                {
+                    "field": "firstName",
+                    "old_value": "Ted",
+                    "new_value": "Tallulah"
+                },
+                {
+                    "field": "lastName",
+                    "old_value": "Masters",
+                    "new_value": "Smith"
+                },
+                {
+                    "field": "address",
+                    "old_value": "44 North Hampton St",
+                    "new_value": "123 Water St"
+                },
+                {
+                    "field": "entryDate",
+                    "old_value": "2014-05-07T17:31:20+00:00",
+                    "new_value": "2014-05-07T17:33:20+00:00"
+                }
+            ]
+        }
+    ]
+}
